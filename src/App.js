@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function ThePhilosophers() {
-  // السطر الذي كان هنا تم حذفه
 
   const TOKENS = {
     ETH: 'ETH',
