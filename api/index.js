@@ -1,8 +1,8 @@
-// The full code for the file: api/index.js
+// The correct and final code for: api/index.js
 
 export default function handler(req, res) {
-  // The base URL of your deployed Vercel project
-  const appUrl = 'https://philosophers-farcasters.vercel.app'; 
+  // CORRECTED: The base URL of your deployed Vercel project
+  const appUrl = 'https://philosophers-farcasters-wixw.vercel.app'; 
   
   // The external image URL you provided
   const imageUrl = 'https://i.ibb.co/DgWBs8rM/app-logo-4.png';
@@ -24,14 +24,14 @@ export default function handler(req, res) {
         <meta property="fc:frame:button:1" content="Yes" />
         <meta property="fc:frame:button:2" content="No" />
         
-        <!-- URL to handle button clicks. We will create this file next. -->
+        <!-- URL to handle button clicks -->
         <meta property="fc:frame:post_url" content="${appUrl}/api/vote" /> 
 
       </head>
       <body>
         <h1>The Philosophers Farcaster Frame</h1>
         <p>This is a Farcaster Frame. To use it, share this page's URL in a Farcaster client like Warpcast.</p>
-        <p><a href="https://philosophers-farcasters.vercel.app/">Click here to view the main web application.</a></p>
+        <p><a href="${appUrl}">Click here to view the main web application.</a></p>
       </body>
     </html>
   `;
