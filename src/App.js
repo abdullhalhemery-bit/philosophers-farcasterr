@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 export default function ThePhilosophers() {
   const [appState, setAppState] = useState('dashboard');
-  const [currentToken, setCurrentToken] = useState('ETH');
-  const [activeView, setActiveView] = useState('question');
-  const [showAbout, setShowAbout] = useState(false);
-  const [showTokenSelector, setShowTokenSelector] = useState(false);
 
   const TOKENS = {
     ETH: 'ETH',
