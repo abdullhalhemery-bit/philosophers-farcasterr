@@ -11,11 +11,13 @@ const sdk = new FarcasterSDK();
 
 
 export default function ThePhilosophers() {
-  const [appState, setAppState] = useState('dashboard');
+  // لقد حذفنا السطر الخاص بـ appState من هنا
   const [currentToken, setCurrentToken] = useState('ETH');
   const [activeView, setActiveView] = useState('question');
   const [showAbout, setShowAbout] = useState(false);
   const [showTokenSelector, setShowTokenSelector] = useState(false);
+
+  // ... باقي الكود
 
   // ============= التعديل الثالث: إخبار Warpcast بأن التطبيق جاهز ==============
   // هذا الكود يتم تشغيله مرة واحدة عند تحميل التطبيق ليخبر Warpcast
